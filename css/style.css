@@ -1,7 +1,11 @@
 body {
-  background-color: #555;
+  background-color: #bbbbbb;
   color: white;
-  font-family: 'Oswald', 'Helvetica', sans-serif;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+}
+
+.homebody {
+  background-color: #555555;
 }
 
 .wrap {
@@ -46,6 +50,7 @@ header ul {
 
 header ul li {
   display: inline;
+  font-family: 'Oswald', 'Helvetica', sans-serif;
 }
 
 header a {
@@ -68,6 +73,11 @@ header a:hover {
   letter-spacing: 5px;
 }
 
+.bgheader {
+  background-color: #555555;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+}
+
 
 /* HERO */
 
@@ -86,4 +96,44 @@ header a:hover {
   transform: translateY(-50%);
   width: 70%;
   margin: 0 auto;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #555555;
+  height: 50px;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  bottom: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+footer a:hover {
+  color: #00ffde;
+}
+
+.footernav ul li {
+  margin: 10px;
 }
