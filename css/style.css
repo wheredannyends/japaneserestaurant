@@ -63,15 +63,9 @@ header a:hover {
   margin: 10px;
 }
 
-.socialmedia {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-content: center;
-  text-align: right;
-  letter-spacing: 3px;
+.socialmedia i {
+  font-size: 1.5em;
+  letter-spacing: 5px;
 }
 
 
