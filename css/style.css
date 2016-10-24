@@ -1,0 +1,95 @@
+body {
+  background-color: #555;
+  color: white;
+  font-family: 'Oswald', 'Helvetica', sans-serif;
+}
+
+.wrap {
+  width: 1140px;
+  text-align: center;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  letter-spacing: 20px;
+  margin: 0 auto;
+  text-shadow: 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* HEADER */
+
+header {
+  height: 100px;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: #ff4d00;
+}
+
+.mainnav ul li {
+  letter-spacing: 5px;
+  margin: 10px;
+}
+
+.socialmedia {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-content: center;
+  text-align: right;
+  letter-spacing: 3px;
+}
+
+
+/* HERO */
+
+.hero {
+  background: url(../images/hero.jpeg) no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  opacity: 0.5;
+}
+
+.herotext {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 70%;
+  margin: 0 auto;
+}
