@@ -1,30 +1,65 @@
+.homebody {
+  background-color: #555555;
+}
+
+.pagebody {
+  background: url(../images/bg.jpg) repeat center center;
+  color: #555555;
+}
+
 body {
-  background-color: #bbbbbb;
-  color: white;
   font-family: 'Raleway', 'Helvetica', sans-serif;
 }
 
-.homebody {
-  background-color: #555555;
+h3,
+h4 {
+  font-family: 'Oswald', 'Helvetica', sans-serif;
+  margin: 0;
 }
 
 .wrap {
   width: 1140px;
   text-align: center;
   margin: 0 auto;
+  height: 100%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
+.content {
+  margin-top: 150px;
+  flex-direction: column;
+  text-align: left;
+}
+
 h1 {
-  font-family: 'Raleway', 'Helvetica', sans-serif;
+  color: white;
   letter-spacing: 20px;
   margin: 0 auto;
-  text-shadow: 0 5px 2px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+  font-size: 3em;
+}
+
+h3 {
+  letter-spacing: 8px;
+  color: #ff4d00
+}
+
+h4 {
+  letter-spacing: 5px;
+}
+
+.span__top {
+  color: #ff4d00;
+}
+
+.span__bottom {
+  color: #00ffde;
 }
 
 
@@ -36,16 +71,12 @@ header {
   z-index: 9999;
   width: 100%;
   top: 0;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
+
 }
 
-header ul {
+ul {
   list-style-type: none;
+  padding: 0;
 }
 
 header ul li {
@@ -94,8 +125,66 @@ header a:hover {
   left: 0;
   right: 0;
   transform: translateY(-50%);
-  width: 70%;
   margin: 0 auto;
+}
+
+
+/* LOCATION */
+
+.location {
+  background-color: #555555;
+  padding: 10px 10px 10px 50px;
+  color: white;
+  width: 50%;
+  margin: 25px auto;
+  text-align: center;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.location p {
+  margin: 0;
+}
+
+.location aside {
+  margin-top: 10px;
+}
+
+.location iframe {
+  border-style: none;
+}
+
+.location article {
+  margin-top: 25px;
+}
+
+.locationboxes {
+  margin-top: 50px;
+}
+
+.reservationbutton h4 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.reservationbutton a {
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+  padding: 20px;
+  border: solid white;
+  background-color: #555555;
+}
+
+.reservationbutton a:hover {
+  color: #ff4d00;
+  border: solid #ff4d00;
 }
 
 
@@ -103,17 +192,12 @@ header a:hover {
 
 footer {
   background-color: #555555;
+  color: white;
   height: 50px;
-  position: fixed;
   z-index: 9999;
   width: 100%;
   bottom: 0;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
+  margin-top: 50px;
 }
 
 footer ul {
