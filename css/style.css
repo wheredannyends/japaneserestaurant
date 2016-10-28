@@ -1,13 +1,18 @@
 .homebody {
-  background-color: #555555;
+  background-color: #2E2E2E;
 }
 
 .pagebody {
-  background: url(../images/bg.jpg) repeat center center;
+  background: #2e2e2e;
   color: white;
 }
 
 body {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  color: white;
+}
+
+h1 {
   font-family: 'Raleway', 'Helvetica', sans-serif;
 }
 
@@ -47,15 +52,16 @@ h1 {
 
 h3 {
   letter-spacing: 8px;
-  color: #ff4d00
+  color: #cc0000
 }
 
 h4 {
   letter-spacing: 5px;
+  font-size: 20px;
 }
 
 .span__top {
-  color: #ff4d00;
+  color: #cc0000;
 }
 
 .span__bottom {
@@ -71,7 +77,13 @@ header {
   z-index: 9999;
   width: 100%;
   top: 0;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
 
+header.sticky {
+  background-color: #2E2E2E;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 ul {
@@ -91,7 +103,7 @@ header a {
 }
 
 header a:hover {
-  color: #ff4d00;
+  color: #cc0000;
 }
 
 .mainnav ul li {
@@ -102,11 +114,6 @@ header a:hover {
 .socialmedia i {
   font-size: 1.5em;
   letter-spacing: 5px;
-}
-
-.bgheader {
-  background-color: #555555;
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -128,64 +135,55 @@ header a:hover {
   margin: 0 auto;
 }
 
+.locationshero {
+  background: url(../images/locations.jpg) no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  opacity: 0.3;
+}
 
-/* LOCATION */
 
-.location {
-  background-color: #555555;
-  padding: 10px 10px 10px 50px;
-  width: 50%;
-  margin: 25px auto;
+/* LOCATIONS */
+
+.locations__grey {
+  background-color: #a8a8a8;
+  padding: 50px 0;
   text-align: center;
+  color: white;
+}
+
+.locations__blank {
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.locations__wrap {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
-}
-
-.location p {
-  margin: 0;
-}
-
-.location aside {
-  margin-top: 10px;
-}
-
-.location iframe {
-  border-style: none;
-}
-
-.location article {
-  margin-top: 25px;
-}
-
-.locationboxes {
-  margin-top: 50px;
-}
-
-.reservationbutton h4 {
-  text-align: center;
+  width: 70%;
   margin: 0 auto;
 }
 
-.reservationbutton a {
-  text-decoration: none;
-  color: white;
-  transition: 0.2s;
-  padding: 20px;
-  border: solid white;
-  background-color: #555555;
+.locations__wrap p {
+  margin: 0;
 }
 
-.reservationbutton a:hover {
-  color: #ff4d00;
-  border: solid #ff4d00;
+.locations__wrap aside {
+  margin-top: 10px;
 }
 
+.locations__wrap iframe {
+  border-style: none;
+}
+
+.locations__wrap article {
+  margin-top: 25px;
+}
 
 /* LEGAL */
 
@@ -193,14 +191,26 @@ header a:hover {
   margin-top: 150px;
   flex-direction: column;
   text-align: left;
-  background-color: #555555;
+  background-color: #2E2E2E;
   padding: 20px;
+}
+
+
+/* RESERVE */
+
+.form {
+  width: 50%;
+}
+
+.form input {
+  width: 80%;
+  margin: 10px;
 }
 
 /* FOOTER */
 
 footer {
-  background-color: #555555;
+  background-color: #2E2E2E;
   height: 50px;
   z-index: 9999;
   width: 100%;
