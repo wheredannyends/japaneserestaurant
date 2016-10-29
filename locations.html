@@ -8,18 +8,16 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/js.js" type="text/javascript"></script>
 </head>
 
-<body class="pagebody">
+<body>
 
   <header>
     <section class="wrap">
       <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
       <nav class="mainnav">
         <ul>
-          <li><span class="span__top">LOCATIONS</span></li>
+          <li><a href="#herosection">LOCATIONS</a></li>
           <li><a href="menu.html">MENU</a></li>
           <li><a href="news.html">NEWS</a></li>
           <li><a href="about.html">ABOUT</a></li>
@@ -33,21 +31,31 @@
     </section>
   </header>
 
-  <section class="locationshero"></section>
+  <section class="hero locationshero" id="herosection"></section>
   <section class="herotext">
     <div class="wrap">
       <h1>
         FOUR LOCATIONS<br/>
         TO SERVE YOU BETTER
       </h1>
+      <a href="reserve.html">
+        <div class="herobutton">
+          <h3>MAKE A RESERVATION</h3>
+        </div>
+      </a>
+      <a href="#locations">
+        <div class="herobutton">
+          <h3>LOCATION INFO</h3>
+        </div>
+      </a>
     </div>
   </section>
 
-  <section class="locations__blank">
+  <section class="locations__blank" id="locations">
     <div class="wrap">
       <div class="locations__wrap">
         <article>
-          <h4>NELSON</h4>
+          <h3>NELSON</h3>
           <p>604-123-4567</p>
           <aside>
             123 Madeup Road
@@ -77,7 +85,7 @@
     <div class="wrap">
       <div class="locations__wrap">
         <article>
-          <h4>NELSON</h4>
+          <h3>NELSON</h3>
           <p>604-123-4567</p>
           <aside>
             123 Madeup Road
@@ -107,7 +115,7 @@
     <div class="wrap">
       <div class="locations__wrap">
         <article>
-          <h4>NELSON</h4>
+          <h3>NELSON</h3>
           <p>604-123-4567</p>
           <aside>
             123 Madeup Road
@@ -137,7 +145,7 @@
     <div class="wrap">
       <div class="locations__wrap">
         <article>
-          <h4>NELSON</h4>
+          <h3>NELSON</h3>
           <p>604-123-4567</p>
           <aside>
             123 Madeup Road
@@ -175,8 +183,9 @@
     </section>
   </footer>
 
-  <script>
-  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/js.js" type="text/javascript"></script>
+
 </body>
 
 </html>
