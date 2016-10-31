@@ -38,6 +38,10 @@ nav {
   font-size: 16px;
 }
 
+footer nav {
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+}
+
 .wrap {
   width: 1140px;
   text-align: center;
