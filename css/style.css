@@ -125,11 +125,15 @@ header a:hover {
   letter-spacing: 5px;
 }
 
+.mobileheader {
+  display: none;
+}
+
 
 /* HERO */
 
 .hero {
-  background: url(../images/hero.jpg) no-repeat center center;
+  background: url(../images/hero.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 800px;
   opacity: 0.5;
@@ -148,9 +152,13 @@ header a:hover {
   flex-direction: column;
 }
 
+.herotext img {
+  display: none;
+}
+
 .herobutton {
   width: 300px;
-  padding: 15px;
+  padding: 15px 0;
   margin-top: 20px;
   border: solid white 3px;
   transition: 0.2s;
@@ -161,7 +169,6 @@ header a:hover {
   border: solid #448C58 3px;
   color: #448C58;
 }
-
 
 /* LOCATIONS */
 
@@ -270,4 +277,47 @@ footer a:hover {
 
 .footernav ul li {
   margin: 10px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1140px) {
+  
+  .wrap {
+    width: 90%;
+  }
+  
+}
+
+@media screen and (max-width: 765px) {
+  
+  .fullheader {
+    display: none;
+  }
+  
+  .mobileheader {
+    display: block;
+  }
+  
+  h1 {
+    display: none;
+  }
+  
+  header  {
+    margin: 0 auto;
+  }
+  
+  header ul li {
+    display: block;
+  }
+  
+  .locations__wrap {
+    width: 100%;
+  }
+  
+  .mobileheader .herobutton {
+    margin: 20px auto;
+  }
+  
 }

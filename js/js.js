@@ -25,3 +25,11 @@ $(window).on("scroll", function () {
     $("header").removeClass("sticky");
   }
 });
+
+
+///// MOBILE NAV /////
+
+
+$(function(){
+		$('.mobilenav').slicknav();
+	});
