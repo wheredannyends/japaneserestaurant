@@ -133,22 +133,22 @@ header a:hover {
 /* HERO */
 
 .hero {
-  background: url(../images/hero.jpg) no-repeat center center fixed;
+  background: url(../images/hero.jpg) no-repeat center center;
   background-size: cover;
-  height: 800px;
-  opacity: 0.5;
+  height: 100vh;
 }
 
-.herotext {
+.herocontent {
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
+  text-align: center;
   margin: 0 auto;
 }
 
-.herotext .wrap {
+.hero .wrap {
   flex-direction: column;
 }
 
@@ -159,7 +159,7 @@ header a:hover {
 .herobutton {
   width: 300px;
   padding: 15px 0;
-  margin-top: 20px;
+  margin: 20px auto;
   border: solid white 3px;
   transition: 0.2s;
   color: white;
@@ -170,12 +170,12 @@ header a:hover {
   color: #448C58;
 }
 
+
 /* LOCATIONS */
 
 .locationshero {
   background: url(../images/locations.jpg) no-repeat center center;
   background-size: cover;
-  opacity: 0.3;
 }
 
 .herotext a:hover {
@@ -287,7 +287,13 @@ footer a:hover {
   .wrap {
     width: 90%;
   }
+}
+
+@media screen and (max-width: 980px) {
   
+  .locations__wrap {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 765px) {
@@ -304,7 +310,7 @@ footer a:hover {
     display: none;
   }
   
-  header  {
+  header {
     margin: 0 auto;
   }
   
@@ -313,11 +319,15 @@ footer a:hover {
   }
   
   .locations__wrap {
-    width: 100%;
+    flex-direction: column;
+  }
+  
+  #locations iframe {
+    width: 300px;
+    margin: 0 auto;
   }
   
   .mobileheader .herobutton {
     margin: 20px auto;
   }
-  
 }
