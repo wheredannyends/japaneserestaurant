@@ -78,6 +78,42 @@ a {
   text-decoration: none;
 }
 
+.section__grey {
+  background-color: #A8A8A8;
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.section__blank {
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+.section__wrap {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.section__wrap p {
+  margin: 0;
+}
+
+.section__wrap aside {
+  margin-top: 10px;
+}
+
+.section__wrap iframe {
+  border-style: none;
+}
+
 
 /* HEADER */
 
@@ -140,12 +176,16 @@ header a:hover {
 
 .herocontent {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
   text-align: center;
   margin: 0 auto;
+}
+
+.herocontent h1 {
+  margin-bottom: 50px;
 }
 
 .hero .wrap {
@@ -170,6 +210,20 @@ header a:hover {
   color: #448C58;
 }
 
+.herobutton2 {
+  width: 200px;
+  padding: 15px 0;
+  margin: 20px auto;
+  border: solid white 3px;
+  transition: 0.2s;
+  color: white;
+}
+
+.herobutton2:hover {
+  border: solid #448C58 3px;
+  color: #448C58;
+}
+
 
 /* LOCATIONS */
 
@@ -182,44 +236,25 @@ header a:hover {
   color: #CC0000;
 }
 
-.locations__grey {
-  background-color: #A8A8A8;
-  padding: 50px 0;
-  text-align: center;
-  color: white;
-}
-
-.locations__blank {
-  padding: 50px 0;
-  text-align: center;
-  color: white;
-}
-
-.locations__wrap {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.locations__wrap p {
-  margin: 0;
-}
-
-.locations__wrap aside {
-  margin-top: 10px;
-}
-
-.locations__wrap iframe {
-  border-style: none;
-}
-
-.locations__wrap article {
+#locations .section__wrap article {
   margin-top: 25px;
+}
+
+
+/* MENU */
+
+.menuhero {
+  background: url(../images/menuhero.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#menu .section__wrap article {
+  margin-top: 60px
+}
+
+#menu .wrap {
+  width: 50%;
+  flex-direction: column;
 }
 
 
@@ -254,7 +289,7 @@ footer {
   z-index: 9999;
   width: 100%;
   bottom: 0;
-  margin-top: 50px;
+  margin: 0;
 }
 
 footer ul {
@@ -322,7 +357,7 @@ footer a:hover {
     flex-direction: column;
   }
   
-  #locations iframe {
+  iframe {
     width: 300px;
     margin: 0 auto;
   }
