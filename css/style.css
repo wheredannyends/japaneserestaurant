@@ -295,9 +295,7 @@ header a:hover {
 }
 
 .about img {
-  height: 500px;
-  width: 30%;
-  margin: 0 50px;
+  margin: 50px;
   box-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -379,15 +377,22 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 765px) {
-  /*   .fullheader {
+  header.sticky {
+    height: 135px;
+  }
+  .fullheader {
     display: none;
   }
   .mobileheader {
     display: block;
-  } 
+  }
   .mobileheader .herobutton {
     margin: 20px auto;
-  }*/
+  }
+  .mobileheader ul li {
+    display: inline;
+    margin: 5px;
+  }
   header .wrap {
     flex-direction: column;
     margin-top: 20px;
@@ -420,5 +425,11 @@ footer a:hover {
   }
   footer .wrap {
     flex-direction: column;
+  }
+  #about .wrap {
+    flex-direction: column;
+  }
+  .aboutcontent {
+    text-align: center;
   }
 }
