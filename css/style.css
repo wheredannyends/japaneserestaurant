@@ -435,4 +435,7 @@ footer a:hover {
   .aboutcontent {
     text-align: center;
   }
+  #about .section__grey .wrap {
+    flex-direction: column-reverse
+  }
 }
