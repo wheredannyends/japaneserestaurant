@@ -375,6 +375,12 @@ footer a:hover {
   }
 }
 
+@media only screen and (max-width: 990px) {
+  #locations .section__wrap {
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   header.sticky {
     height: 135px;
@@ -412,9 +418,6 @@ footer a:hover {
   }
   header ul li {
     display: block;
-  }
-  #locations .section__wrap {
-    flex-direction: column;
   }
   .menusection .wrap {
     width: 90%;
