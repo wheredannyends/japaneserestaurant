@@ -43,10 +43,14 @@ footer nav {
 }
 
 .wrap {
-  width: 1140px;
+  max-width: 1140px;
+  width: 95%;
   text-align: center;
   margin: 0 auto;
   height: 100%;
+}
+
+.flex {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -92,12 +96,6 @@ a {
 }
 
 .section__wrap {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  justify-content: space-between;
   width: 70%;
   margin: 0 auto;
 }
@@ -206,8 +204,8 @@ header a:hover {
   padding: 15px 0;
   margin: 20px auto;
   border: solid white 3px;
-  transition: 0.2s;
   color: white;
+  transition: 0.2s;
 }
 
 .herobutton:hover {
@@ -238,7 +236,13 @@ header a:hover {
 }
 
 #locations .section__wrap article {
-  margin-top: 25px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -294,8 +298,15 @@ header a:hover {
 }
 
 .about img {
-  margin: 50px;
   box-shadow: 0 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+.aboutimg1 {
+  margin-right: 50px;
+}
+
+.aboutimg2 {
+  margin-left: 50px;
 }
 
 
@@ -356,12 +367,6 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 
-@media only screen and (max-width: 1140px) {
-  .wrap {
-    width: 90%;
-  }
-}
-
 @media only screen and (max-width: 980px) {
   .locations__wrap {
     width: 100%;
@@ -399,7 +404,7 @@ footer a:hover {
     margin: 5px;
     letter-spacing: 2px;
   }
-  header .wrap {
+  header .flex {
     flex-direction: column;
     margin-top: 20px;
   }
@@ -407,7 +412,7 @@ footer a:hover {
     display: none;
   }
   h1 {
-    font-size: 100%;
+    font-size: 24px;
     letter-spacing: 5px;
   }
   header {
@@ -426,16 +431,20 @@ footer a:hover {
     width: 100%;
     margin: 0 auto;
   }
-  footer .wrap {
+  footer .flex {
     flex-direction: column;
   }
-  #about .wrap {
+  #about .flex {
     flex-direction: column;
   }
   .aboutcontent {
     text-align: center;
   }
-  #about .section__grey .wrap {
+  #about .section__grey .flex {
     flex-direction: column-reverse
+  }
+  .aboutimg1,
+  .aboutimg2 {
+    margin: 30px 0;
   }
 }
