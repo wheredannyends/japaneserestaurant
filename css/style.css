@@ -380,13 +380,11 @@ footer a:hover {
   }
 }
 
-@media only screen and (max-width: 990px) {
+
+@media only screen and (max-width: 768px) {
   #locations .section__wrap {
     flex-direction: column;
   }
-}
-
-@media only screen and (max-width: 768px) {
   header.sticky {
     height: 135px;
   }
