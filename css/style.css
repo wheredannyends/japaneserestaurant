@@ -19,10 +19,13 @@ body {
 h1 {
   font-family: 'Raleway', 'Helvetica', sans-serif;
   color: white;
-  letter-spacing: 20px;
+  letter-spacing: 12px;
+  word-spacing: 15px;
   margin: 0 auto;
   text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
   font-size: 48px;
+  font-weight: 700;
+  width: 60%;
 }
 
 h2,
@@ -67,7 +70,7 @@ footer nav {
 }
 
 h2 {
-  color: #CC0000
+  color: #CC0000;
 }
 
 .span__top {
@@ -83,7 +86,7 @@ a {
 }
 
 .section__grey {
-  background-color: #A8A8A8;
+  background-color: #d6d6d6;
   padding: 50px 0;
   text-align: center;
   color: #2E2E2E;
@@ -154,14 +157,18 @@ header a:hover {
   color: #CC0000;
 }
 
+header img {
+  width: 123px;
+}
+
 .mainnav ul li {
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   margin: 10px;
 }
 
 .socialmedia i {
   font-size: 30px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 .mobileheader {
@@ -201,30 +208,111 @@ header a:hover {
 
 .herobutton {
   width: 300px;
-  padding: 15px 0;
-  margin: 20px auto;
-  border: solid white 3px;
+  padding: 12px 15px;
+  margin: 20px;
+  border: solid white 2px;
   color: white;
-  transition: 0.2s;
+  display: inline-block;
+  font-weight: normal;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: 'Oswald', 'Helvetica', sans-serif;
+  letter-spacing: 4px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
-.herobutton:hover {
-  border: solid #FFA50D 3px;
-  color: #FFA50D;
+.herobutton:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.herobutton:hover, .herobutton:focus, .herobutton:active {
+  color: #CC0000;
+  border-color: #CC0000;
+}
+.herobutton:hover:before, .herobutton:focus:before, .herobutton:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.herobutton.colored {
+  color: #CC0000;
+  border-color: #CC0000;
 }
 
 .herobutton2 {
-  width: 200px;
-  padding: 15px 0;
-  margin: 20px auto;
-  border: solid white 3px;
-  transition: 0.2s;
-  color: white;
+  width: 300px;
+  padding: 12px 15px;
+  margin: 20px;
+  border: solid #CC0000 2px;
+  color: #CC0000;
+  display: inline-block;
+  font-weight: normal;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-family: 'Oswald', 'Helvetica', sans-serif;
+  letter-spacing: 4px;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
-.herobutton2:hover {
-  border: solid #448C58 3px;
-  color: #448C58;
+.herobutton2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.3);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.herobutton2:hover, .herobutton:focus, .herobutton:active {
+  color: #a50000;
+  border-color: #a50000;
+}
+.herobutton2:hover:before, .herobutton:focus:before, .herobutton:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 
