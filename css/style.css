@@ -331,7 +331,7 @@ header img {
 /* LOCATIONS */
 
 .locationshero {
-  background: url(../images/abouthero.jpg) no-repeat center center;
+  background: url(../images/locations.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -421,6 +421,17 @@ header img {
 
 /* RESERVE */
 
+.reservebg {
+  background: url(../images/reserve.jpg) no-repeat center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -999;
+}
+
 .form h2,
 .form p {
   color: #2e2e2e;
@@ -429,8 +440,9 @@ header img {
 .form {
   background-color: #A8A8A8;
   max-width: 600px;
-  padding: 35px;
-  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 2px;
+  margin-bottom: 30px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
