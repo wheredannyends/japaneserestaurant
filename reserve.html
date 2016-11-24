@@ -13,8 +13,8 @@
 
 <body>
 
-  <header class="bgheader">
-    <section class="wrap flex">
+  <header>
+    <section class="fullheader wrap flex">
       <a href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
       <nav class="mainnav">
         <ul>
@@ -30,25 +30,97 @@
         <li><a href="mailto:info@japaneserestaurant.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a></li>
       </ul>
     </section>
+
+    <section class="mobileheader wrap flex">
+      <nav class="mainnav">
+        <a href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
+        <ul>
+          <li>
+            <a href="locations.html">
+              LOCATIONS
+            </a>
+          </li>
+          <li>
+            <a href="menu.html">
+              MENU
+            </a>
+          </li>
+          <li>
+            <a href="news.html">
+              NEWS
+            </a>
+          </li>
+          <li>
+            <a href="about.html">
+              ABOUT
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
   </header>
 
   <section class="content wrap flex">
-    <h2>MAKE A RESERVATION</h2>
-    <article class="form">
-      <form>
-        <p>Date:</p>
-        <input type="date" value="Date" />
-        <p>Guests:</p>
-        <input type="number" min="1" max="10" value="2">
-        <br/>
-        <p>First Name:</p>
-        <input type="name" placeholder="First Name" required="required" />
-        <p>Last Name:</p>
-        <input type="name" placeholder="Last Name" required="required" />
-        <br/>
-        <button type="submit">Reserve</button>
+    <div class="form">
+      <h2>MAKE A RESERVATION</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur.</p>
+      <form id="reservationform">
+        <input type="text" placeholder="First Name" name="First Name" autofocus="autofocus" />
+        <input type="text" placeholder="Last Name" name="Last Name" />
+        <select name="Location" class="formlocation">
+          <option value="null" selected="selected">Restaurant Location</option>
+          <option value="Nelson">Nelson</option>
+          <option value="Thurlow">Thurlow</option>
+          <option value="Robson">Robson</option>
+          <option value="Gastown">Gastown</option>
+        </select>
+        <input type="number" placeholder="Phone Number" />
+        <input type="text" placeholder="Email" />
+        <input type="date" placeholder="Date" />
+        <div class="formlunchdinner">
+          <article>
+            <input type="radio" name="lunchordinner" value="lunch"> Lunch
+          </article>
+          <article>
+            <input type="radio" name="lunchordinner" value="dinner"> Dinner
+          </article>
+        </div>
+        <select name="lunchtimes" class="formtime formlunchtimes hidden">
+          <option value="null" selected="selected">Reservation Time</option>
+          <option value="11:00AM">11:00AM</option>
+          <option value="11:30AM">11:30AM</option>
+          <option value="12:00PM">12:00PM</option>
+          <option value="12:30PM">12:30PM</option>
+          <option value="1:00PM">1:00PM</option>
+          <option value="1:30PM">1:30PM</option>
+          <option value="2:00PM">2:00PM</option>
+          <option value="2:30PM">2:30PM</option>
+          <option value="3:00PM">3:00PM</option>
+          <option value="3:30PM">3:30PM</option>
+        </select>
+        <select name="dinnertimes" class="formtime formdinnertimes hidden">
+          <option value="null" selected="selected">Reservation Time</option>
+          <option value="4:00PM">4:00PM</option>
+          <option value="4:30PM">4:30PM</option>
+          <option value="5:00PM">5:00PM</option>
+          <option value="5:30PM">5:30PM</option>
+          <option value="6:00PM">6:00PM</option>
+          <option value="6:30PM">6:30PM</option>
+          <option value="7:00PM">7:00PM</option>
+          <option value="7:30PM">7:30PM</option>
+          <option value="8:00PM">8:00PM</option>
+          <option value="8:30PM">8:30PM</option>
+          <option value="9:00PM">9:00PM</option>
+          <option value="9:30PM">9:30PM</option>
+          <option value="10:00PM">10:00PM</option>
+          <option value="10:30PM">10:30PM</option>
+          <option value="11:00PM">11:00PM</option>
+          <option value="11:30PM">11:30PM</option>
+        </select>
+        <input type="text" placeholder="Special Requests" name="Requests" />
+        <button class="herobutton2">RESERVE</button>
       </form>
-    </article>
+    </div>
   </section>
 
   <footer>

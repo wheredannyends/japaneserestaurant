@@ -25,3 +25,29 @@ $(window).on("scroll", function () {
     $("header").removeClass("sticky");
   }
 });
+
+///// FORM /////
+
+$(document).ready(function () {
+
+  var lunchordinner = $('#reservationform input:radio[name=lunchordinner]');
+
+  var lunch = $('#reservationform select[name="lunchtimes"]');
+  var dinner = $('#reservationform select[name="dinnertimes"]');
+  var all = $('#reservationform select[name="lunchtimes"],[name="dinnertimes"]');
+
+  lunchordinner.change(function () {
+    var value = this.value;
+    all.addClass('hidden');
+
+    if (value == 'lunch') {
+      lunch.removeClass('hidden');
+      console.log("lunch");
+    } else if (value == 'dinner') {
+      dinner.removeClass('hidden');
+      console.log("dinner");
+    }
+
+  });
+
+});
