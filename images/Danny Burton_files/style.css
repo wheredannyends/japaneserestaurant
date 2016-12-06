@@ -1,0 +1,167 @@
+.wrap {
+  max-width: 1140px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+body {
+  color: #e3e3e3;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+  font-size: 75px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0;
+}
+
+h2 span {
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline;
+  margin: 0 10px
+}
+
+.button {
+  margin-top: 15px;
+  padding: 15px 0;
+  width: 200px;
+  text-align: center;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  transition: 0.2s ease;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  color: #aaaaaa;
+}
+
+a {
+  text-decoration: none;
+  color: #e3e3e3;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+}
+
+
+/* HERO */
+
+.hero {
+  background: url(../images/IMG_1531%20copy.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  text-align: right;
+}
+
+.hero .flex {
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 65vh;
+}
+
+.socialmedia {
+  font-size: 30px;
+  text-align: right;
+  margin-top: 20px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+
+/* WORK */
+
+.work {
+  background: url(../images/IMG_3655.JPG) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.work h2 {
+  padding-top: 100px;
+}
+
+.workarticle {
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 300px;
+  width: 25%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.workarticle .flex {
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  font-size: 50px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+footer .flex {
+  justify-content: center;
+}
+
+.arrowbutton {
+  
+}
