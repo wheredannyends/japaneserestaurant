@@ -705,6 +705,9 @@ footer a:hover {
   header {
     margin: 0 auto;
   }
+  .herocontent {
+    margin-top: 50px;
+  }
   .hero p {
     font-size: 90%;
     width: 95%;
