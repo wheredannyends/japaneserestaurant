@@ -177,7 +177,8 @@ header img {
   margin: 10px;
 }
 
-.socialmedia i {
+.socialmedia i,
+.mobilesocialmedia i {
   font-size: 30px;
   letter-spacing: 4px;
 }
@@ -678,20 +679,24 @@ footer a:hover {
   .mobileheader {
     display: block;
   }
+  .mobileheadertop .flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
   .mobileheader .herobutton {
     margin: 20px auto;
   }
   .mobileheader ul li {
     display: inline;
-    margin: 5px;
+    margin: 0;
     letter-spacing: 2px;
+  }
+  .mobilenav ul li {
+    margin: 8px;
   }
   header .flex {
     flex-direction: column;
     margin-top: 20px;
-  }
-  .socialmedia {
-    display: none;
   }
   h1 {
     font-size: 24px;
