@@ -12,6 +12,8 @@ D-GREY:   2E2E2E
 
 body {
   font-family: 'Raleway', 'Helvetica', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
   color: white;
   background: #2E2E2E;
 }
@@ -24,6 +26,7 @@ h1 {
   margin: 0 auto;
   text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
   font-size: 48px;
+  line-height: 72px;
   font-weight: 700;
   width: 62%;
 }
@@ -139,7 +142,7 @@ header {
 }
 
 header.sticky {
-  background-color: #2E2E2E;
+  background-color: rgba(46, 46, 46, 0.9);
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
 }
 
@@ -164,7 +167,7 @@ header a {
 }
 
 header a:hover {
-  color: #CC0000;
+  color: #ffc049;
   text-shadow: 0 2px 3px black;
 }
 
@@ -288,8 +291,9 @@ header img {
 .herobutton:hover,
 .herobutton:focus,
 .herobutton:active {
-  color: #CC0000;
-  border-color: #CC0000;
+  color: #ffc049;
+  
+  border-color: #ffc049;
 }
 
 .herobutton:hover:before,
@@ -300,8 +304,9 @@ header img {
 }
 
 .herobutton.colored {
-  color: #CC0000;
-  border-color: #CC0000;
+  color: #ffc049;
+  
+  border-color: #ffc049;
 }
 
 .herobutton2 {
@@ -351,8 +356,8 @@ header img {
 .herobutton2:hover,
 .herobutton:focus,
 .herobutton:active {
-  color: #a50000;
-  border-color: #a50000;
+  color: #cc0000;
+  border-color: #cc0000;
 }
 
 .herobutton2:hover:before,
@@ -398,6 +403,86 @@ iframe {
 }
 
 
+/* LUNCH DINNER DRINKS */
+
+.menubg {
+  background: url(../images/kofu.jpg) no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -999;
+}
+
+.menucontent {
+  margin-top: 100px;
+}
+
+.menutitle {
+  width: 100%;
+  margin: 50px auto;
+}
+
+.menutitle .flex {
+  width: 100;
+  flex-direction: column;
+}
+
+.menutitle h3 {
+  font-size: 40px;
+  margin: 10px auto;
+  padding: 0;
+}
+
+.menubuttons {
+  width: 100%;
+}
+
+.menubuttons .herobutton {
+  margin: 20px 5px;
+  width: 200px;
+}
+
+.menucontent h2 {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.menucontent .flex {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.menuarea h4,
+.menuarea p {
+  margin: 10px auto;
+  width: 90%;
+}
+
+.menuarea {
+  width: 30%;
+  background-color: rgba(46, 46, 46, 0.9);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+.menuarea .flex {
+  flex-direction: column;
+}
+
+.menuarea h2 {
+  line-height: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+.menuarea h2 span {
+  color: white;
+}
+
+
 /* NEWS */
 
 .newshero {
@@ -415,7 +500,7 @@ iframe {
 }
 
 .newsevents article {
-  background-color: #2E2E2E;
+  background-color: rgba(46, 46, 46, 0.9);
   color: white;
 }
 
@@ -719,6 +804,19 @@ footer a:hover {
   .menusection .wrap {
     width: 90%;
   }
+  .menucontent {
+    margin-top: 130px;
+  }
+  .menucontent .flex {
+    flex-direction: column;
+  }
+  .menucontent h3 {
+    text-align: center;
+  }
+  .menuarea {
+    width: 90%;
+    margin: 10px auto;
+  }
   iframe {
     width: 100%;
     margin: 0 auto;
@@ -731,6 +829,10 @@ footer a:hover {
   }
   .aboutcontent {
     text-align: center;
+  }
+  .aboutcontent p {
+    width: 90%;
+    margin: 15px auto;
   }
   #about .section__grey .flex {
     flex-direction: column-reverse
