@@ -405,6 +405,11 @@ iframe {
   background-size: cover;
 }
 
+.newshero p {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .newsevents h2 {
   margin: 10px 0;
 }
@@ -708,10 +713,6 @@ footer a:hover {
   .herocontent {
     margin-top: 50px;
   }
-  .hero p {
-    font-size: 90%;
-    width: 95%;
-  }
   header ul li {
     display: block;
   }
@@ -743,6 +744,10 @@ footer a:hover {
 @media only screen and (max-width: 500px) {
   .newsarticle .flex {
     flex-direction: column;
+  }
+  .hero p {
+    font-size: 90%;
+    width: 95%;
   }
   .newsarticletext {
     text-align: center;
