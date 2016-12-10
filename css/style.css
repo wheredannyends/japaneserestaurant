@@ -791,12 +791,16 @@ footer a:hover {
   h1 {
     font-size: 32px;
     letter-spacing: 5px;
+    line-height: 42px;
   }
   header {
     margin: 0 auto;
   }
   .herocontent {
     margin-top: 50px;
+  }
+  .herobutton {
+    margin: 10px;
   }
   header ul li {
     display: block;
