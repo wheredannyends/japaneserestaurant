@@ -81,7 +81,7 @@ h2 {
 }
 
 .span__bottom {
-  color: #448C58;
+  color: #CC0000;
 }
 
 a {
@@ -167,7 +167,7 @@ header a {
 }
 
 header a:hover {
-  color: #ffc049;
+  color: #CC0000;
   text-shadow: 0 2px 3px black;
 }
 
@@ -291,9 +291,9 @@ header img {
 .herobutton:hover,
 .herobutton:focus,
 .herobutton:active {
-  color: #ffc049;
+  color: #CC0000;
   
-  border-color: #ffc049;
+  border-color: #CC0000;
 }
 
 .herobutton:hover:before,
@@ -304,9 +304,9 @@ header img {
 }
 
 .herobutton.colored {
-  color: #ffc049;
+  color: #CC0000;
   
-  border-color: #ffc049;
+  border-color: #CC0000;
 }
 
 .herobutton2 {
